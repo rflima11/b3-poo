@@ -1,6 +1,6 @@
 public class Cumbuca {
 
-    static String composicao = "PLÁSTICO";
+    static int quantidadeDeCumbucas = 0;
 
     //valor default: null
     Formato formato;
@@ -14,8 +14,20 @@ public class Cumbuca {
     //valor default: false;
     boolean estaCheia;
 
+    public Cumbuca(Formato formato, String cor, double peso, boolean estaCheia) {
+        this.formato = formato;
+        this.cor = cor;
+        this.peso = peso;
+        this.estaCheia = estaCheia;
+        quantidadeDeCumbucas++;
+    }
+
     public void encher() {
         estaCheia = true;
+    }
+
+    public void encherQuantidade(double quantidadePassada) {
+        peso += quantidadePassada;
     }
 
     public void emUso() {
@@ -25,4 +37,6 @@ public class Cumbuca {
             System.out.println("Cumbuca está vazia");
         }
     }
+
+
 }
