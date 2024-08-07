@@ -1,3 +1,10 @@
+package main;
+
+import model.Cumbuca;
+import model.Formato;
+import model.Livro;
+import model.Pessoa;
+
 public class PrimeiraAula {
 
     public static void main(String[] args) {
@@ -7,8 +14,8 @@ public class PrimeiraAula {
 //      System.out.println(pessoa.dataHoraCriacao);
 
 /*
-        Cumbuca cumbuca = new Cumbuca();
-        cumbuca.formato = Formato.REDONDO;
+        model.Cumbuca cumbuca = new model.Cumbuca();
+        cumbuca.formato = model.Formato.REDONDO;
         cumbuca.cor = "Rosa";
         cumbuca.peso = 200.00;
         cumbuca.encherQuantidade(200);
@@ -16,8 +23,8 @@ public class PrimeiraAula {
 
         cumbuca.emUso();
 
-        Cumbuca cumbuca2 = new Cumbuca();
-        cumbuca2.formato = Formato.QUADRADO;
+        model.Cumbuca cumbuca2 = new model.Cumbuca();
+        cumbuca2.formato = model.Formato.QUADRADO;
         cumbuca2.cor = "Vermelha";
         cumbuca2.peso = 150.00;
 
@@ -26,7 +33,7 @@ public class PrimeiraAula {
 
         cumbuca2.emUso();
 
-        System.out.println(Cumbuca.composicao);*/
+        System.out.println(model.Cumbuca.composicao);*/
 
       Cumbuca cumbuca = new Cumbuca(Formato.REDONDO,
               "azul",
@@ -37,10 +44,6 @@ public class PrimeiraAula {
       System.out.println(cumbuca.cor);
       System.out.println(cumbuca.estaCheia);
       System.out.println(cumbuca.formato);
-
-      String resultado = StringUtil.caixaAlta("olá esse texto estará em caixa alta");
-      System.out.println(resultado);
-
 
       Livro livro = new Livro();
 

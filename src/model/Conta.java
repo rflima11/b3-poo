@@ -1,3 +1,5 @@
+package model;
+
 public class Conta {
 
     private String titular;
@@ -27,13 +29,13 @@ public class Conta {
         } else if (this.saldo >= valorSaque) {
             this.saldo -= valorSaque;
         } else {
-            throw new IllegalArgumentException("Conta não tem saldo disponível");
+            throw new IllegalArgumentException("model.Conta não tem saldo disponível");
         }
     }
 
     public void transferir(Conta contaDestino, double valorTransferencia) {
         if (contaDestino == null) {
-            throw new IllegalArgumentException("Conta não pode ser nulo");
+            throw new IllegalArgumentException("model.Conta não pode ser nulo");
         }
 
         if (this.saldo >= valorTransferencia) {

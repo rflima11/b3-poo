@@ -1,3 +1,7 @@
+package main;
+
+import model.Conta;
+
 public class TesteConta {
 
 

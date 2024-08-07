@@ -1,3 +1,7 @@
+package main;
+
+import model.Livro;
+
 public class TesteLivro {
 
     public static void main(String[] args) {

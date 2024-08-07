@@ -1,8 +1,10 @@
+package model;
+
 public class Livro {
 
-    String titulo;
-    String autor;
-    int anoPublicacao;
+    public String titulo;
+    public String autor;
+    public int anoPublicacao;
 
     public Livro() {
         this.titulo = "Titulo não informado";

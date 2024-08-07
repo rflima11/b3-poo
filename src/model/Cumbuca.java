@@ -1,18 +1,20 @@
+package model;
+
 public class Cumbuca {
 
     static int quantidadeDeCumbucas = 0;
 
     //valor default: null
-    Formato formato;
+    public Formato formato;
 
     //valor default: null
-    String cor;
+    public String cor;
 
     //valor default: 0.0
-    double peso;
+    public double peso;
 
     //valor default: false;
-    boolean estaCheia;
+    public boolean estaCheia;
 
     public Cumbuca(Formato formato, String cor, double peso, boolean estaCheia) {
         this.formato = formato;
@@ -32,9 +34,9 @@ public class Cumbuca {
 
     public void emUso() {
         if (estaCheia) {
-            System.out.println("Cumbuca está cheia");
+            System.out.println("model.Cumbuca está cheia");
         } else {
-            System.out.println("Cumbuca está vazia");
+            System.out.println("model.Cumbuca está vazia");
         }
     }
 

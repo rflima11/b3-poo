@@ -1,12 +1,16 @@
-public class TerceiroExercicio {
+package exercicios;
 
-/*  * A partir da classe Pessoa criada na primeira aula, altere os modificadores de acesso de cada atributo
+import model.Pessoa;
+
+public class ExercicioTres {
+
+/*  * A partir da classe model.Pessoa criada na primeira aula, altere os modificadores de acesso de cada atributo
     para que sejam acessíveis apenas a partir da própria classe e crie métodos getters e setters para cada um deles.
 
-    * Crie uma classe com um método main para criar uma instância da classe Pessoa utilizando os métodos criados.
+    * Crie uma classe com um método main para criar uma instância da classe model.Pessoa utilizando os métodos criados.
 
 
-    public class Pessoa {
+    public class model.Pessoa {
 
         String nome;
         int idade;
